@@ -11,12 +11,23 @@ priority: high
 
 Authoritative product list (use this exact ordering and wording in every README ecosystem block):
 
-- [Kreuzberg](https://docs.kreuzberg.dev) — document intelligence: text, tables, metadata from 91+ formats with optional OCR.
-- [Kreuzberg Cloud](https://docs.kreuzberg.cloud) — managed extraction API with SDKs, dashboards, and observability.
-- [kreuzcrawl](https://docs.kreuzcrawl.kreuzberg.dev) — web crawling and scraping with HTML→Markdown and headless-Chrome fallback.
-- [html-to-markdown](https://docs.html-to-markdown.kreuzberg.dev) — fast, lossless HTML→Markdown engine.
-- [liter-llm](https://docs.liter-llm.kreuzberg.dev) — universal LLM API client with native bindings for 14 languages and 143 providers.
-- [tree-sitter-language-pack](https://docs.tree-sitter-language-pack.kreuzberg.dev) — tree-sitter grammars and code-intelligence primitives.
+- [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg) — document intelligence: text, tables, metadata from 91+ formats with optional OCR.
+- [Kreuzberg Cloud](https://github.com/kreuzberg-dev/kreuzberg-cloud) — managed extraction API with SDKs, dashboards, and observability.
+- [kreuzcrawl](https://github.com/kreuzberg-dev/kreuzcrawl) — web crawling and scraping with HTML→Markdown and headless-Chrome fallback.
+- [html-to-markdown](https://github.com/kreuzberg-dev/html-to-markdown) — fast, lossless HTML→Markdown engine.
+- [liter-llm](https://github.com/kreuzberg-dev/liter-llm) — universal LLM API client with native bindings for 14 languages and 143 providers.
+- [tree-sitter-language-pack](https://github.com/kreuzberg-dev/tree-sitter-language-pack) — tree-sitter grammars and code-intelligence primitives.
+- [alef](https://github.com/kreuzberg-dev/alef) — the polyglot binding generator that produces every per-language binding across the 5 polyglot repos.
+
+**Alef badge (polyglot repos only — kreuzberg, h2m, tslp, lllm, kreuzcrawl)**:
+
+```markdown
+[![Built with alef](https://img.shields.io/badge/built%20with-alef%20%D7%90-007ec6)](https://github.com/kreuzberg-dev/alef)
+```
+
+The `%D7%90` URL-encodes the Hebrew letter א (Aleph) — the canonical alef brand mark. Place in the badge row at the top of each polyglot repo's root README, and inside the alef-generated badge partial so every per-package README inherits it.
+
+Ecosystem-block links MUST use the GitHub repo URLs (`github.com/kreuzberg-dev/<repo>`), not the `docs.<repo>.kreuzberg.dev` subdomains — GitHub links push traffic to the source repos, encouraging stars.
 
 Docs sites use the Zensical SSG (Material theme) with shared canonical assets:
 - `docs/css/extra.css` (identical across repos; per-repo accent overrides at end of file allowed)

@@ -34,7 +34,7 @@ Docs sites use the Zensical SSG (Material theme) with shared canonical assets:
 - `docs/overrides/main.html` (identical across repos; only GA ID, og-image URL, edit-link prefix substituted per-repo)
 - `zensical.toml` theme/plugins/markdown_extensions blocks (identical across repos)
 - Nav: `Home → Get Started → Guides → Concepts → Reference → More`
-- `docs/index.md`: hero → "Why X" 6-card grid → Language Support table → Quick Example tabs → "Part of Kreuzberg, Inc." ecosystem grid → "Explore the Docs" cards → Getting Help
+- `docs/index.md`: hero → "Why X" 6-card grid → Language Support table → Quick Example tabs → "Part of Kreuzberg.dev" ecosystem grid → "Explore the Docs" cards → Getting Help
 - `docs/llms.txt`: canonical sitemap shape with an Ecosystem section listing all sibling docs subdomains
 
 Every repo's root Taskfile exposes the same docs commands via `.task/tools/docs.yml`:

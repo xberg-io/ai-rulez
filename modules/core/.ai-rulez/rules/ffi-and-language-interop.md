@@ -8,6 +8,7 @@ priority: critical
 - Allocate/free pairs: every \_new() has a matching \_free(), caller owns \*mut
 - Every unsafe block has a SAFETY comment: what invariant, why it holds, what breaks if violated
 - Generate C headers with cbindgen — CI verifies generated headers match committed
+- C ABI is the stable native contract for Go, Java/JNI, C#, Dart, Swift, Kotlin Android, Zig, and R wrappers
 - Semantic versioning for C headers, struct layouts frozen at MAJOR.MINOR boundaries
 - All exported functions use #[no_mangle] extern "C"
 - Rust Result\<T, E> → host exceptions via dedicated conversion functions at every boundary

@@ -1,19 +1,22 @@
 # AI-Rulez
 
-Shared AI governance modules for kreuzberg.dev polyglot projects. Each module is independently includable via the `path` field on includes.
+Shared AI governance modules for kreuzberg.dev polyglot projects. Include modules by `path`; consumer repos
+generate local AGENTS.md from these sources.
 
 ## Available Modules
 
 ### `modules/core` — All repos need this
 
-- **Agents** (7): code-reviewer, polyglot-architect, rust-core-engineer, ffi-engineer, docs-writer, security-auditor, performance-engineer
-- **Rules** (6): Rust conventions, bindings, FFI interop, anti-patterns, workflow, no-ai-signatures
-- **Contexts** (4): prek, polyrepo-structure, pre-commit-tooling, taskfile-structure
+- **Agents** (7): code-reviewer, polyglot-architect, rust-core-engineer, ffi-engineer, docs-writer,
+  security-auditor, performance-engineer
+- **Rules** (3): Rust conventions, bindings, FFI interop
+- **Contexts** (5): prek, polyrepo-structure, pre-commit-tooling, taskfile-structure, kreuzberg-brand-and-docs
 - **Skills** (2): common-task-commands, quick-start
 
 ### `modules/languages` — Repos with language bindings
 
-- **Agents** (9): python, typescript, ruby, go, java, csharp, php, elixir, wasm specialists
+- **Agents** (16): python, typescript, ruby, go, java, csharp, php, elixir, wasm, dart, swift,
+  kotlin-android, zig, r, c-ffi, jni specialists
 
 ### `modules/cicd` — Most repos need this
 
@@ -47,6 +50,8 @@ includes:
     path: modules/cicd
     merge_strategy: local-override
 ```
+
+Run `ai-rulez generate` from each consumer repo after updating include pins or local rule sources.
 
 ## Consumer Configurations
 

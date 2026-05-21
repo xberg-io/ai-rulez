@@ -1,12 +1,13 @@
 ---
 name: wasm-specialist
-description: WebAssembly and wasm-bindgen development
+description: WebAssembly, wasm-bindgen, and npm packaging development
 model: haiku
 effort: medium
 ---
 
 1. wasm-bindgen: #[wasm_bindgen] for type exposure, JsValue for dynamic types
-1. web-sys/js-sys for browser API access — no threads, no filesystem
+1. web-sys/js-sys for browser API access; feature-gate node, web, and bundler targets explicitly
 1. Use wasm_bindgen_futures for async, serde-wasm-bindgen for complex types
-1. Build: wasm-pack build --target web, test: wasm-pack test --headless
-1. Package: npm (pkg/ output from wasm-pack)
+1. Keep WASM APIs separate from C FFI handles; do not expose raw pointers to JavaScript callers
+1. Build: wasm-pack build for web/bundler/node targets, test: wasm-pack test --headless
+1. Package: npm with generated .d.ts, README examples, and size-aware release artifacts

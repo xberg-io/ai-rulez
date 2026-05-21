@@ -9,4 +9,5 @@ priority: high
 - Tokio 1.x exclusively, 'static + Send + Sync bounds on public futures
 - All public types FFI-friendly or have FFI equivalents (#[repr(C)])
 - Avoid Rust-specific idioms that can't be expressed in target languages
+- Keep binding-safe DTOs separate from integration-specific request/response types
 - Cargo.toml version is single source of truth — synced to all binding manifests

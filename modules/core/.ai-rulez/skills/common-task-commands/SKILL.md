@@ -12,8 +12,11 @@ priority: critical
 | **Test** | `task test:all`, `task rust:test`, `task python:test`, `task node:test`, `task go:test`, `task java:test`, `task ruby:test`, `task e2e:all` |
 | **Lint** | `task lint:all`, `task lint:check` (CI), `task rust:clippy`, `task python:lint`, `task node:lint` |
 | **Format** | `task format`, `task format:check`, `task rust:fmt`, `task python:format`, `task node:format` |
+| **Alef** | `task alef:generate`, `task alef:verify`, `task alef:build`, `task build:bindings`, `task alef:sync`, `task alef:docs` |
 | **Utils** | `task clean`, `task version:sync`, `task pre-commit`, `task smoke` |
 
 Build commands respect `BUILD_PROFILE` (dev/release/ci). Append `:dev` or `:release` for explicit mode.
+
+**Alef Generation**: `task alef:generate` runs `alef all --clean --format=false` for fast regeneration. It does not build bindings and does not run post-generation formatters.
 
 **E2E Generation**: `task generate:e2e` (regenerates all language test suites from fixtures)

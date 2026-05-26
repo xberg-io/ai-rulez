@@ -27,7 +27,7 @@ Wire it into `.pre-commit-config.yaml` as:
 | **General** | trailing-whitespace, end-of-file-fixer, check-merge-conflict, detect-private-key, typos |
 | **Rust** | cargo-fmt, cargo-clippy (-D warnings), cargo-machete, cargo-deny, cargo-sort |
 | **Python** | ruff (lint+format), mypy |
-| **JS/TS** | biome (format+lint), oxlint |
+| **JS/TS/JSON/CSS** | oxfmt (format), oxlint |
 | **Go** | golangci-lint |
 | **Java** | cpd, checkstyle, maven verify |
 | **Ruby** | rubocop (format+lint), steep |
@@ -37,7 +37,7 @@ Wire it into `.pre-commit-config.yaml` as:
 | **R** | styler, lintr |
 | **C/C++** | clang-format, cppcheck |
 | **Shell** | shfmt, shellcheck |
-| **TOML** | taplo, pyproject-fmt |
+| **TOML** | check-toml, cargo-sort, pyproject-fmt |
 | **Markdown** | rumdl-fmt, textlint (docs/) |
 | **Git** | gitfluff (commit msg linting), ai-rulez-generate |
 | **GH Actions** | actionlint |

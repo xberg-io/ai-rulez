@@ -34,7 +34,7 @@ When working on CI/CD, build infrastructure, or automation:
 ## Quality Gates
 
 - Coverage thresholds: Rust 95%, bindings 80% — zero warnings policy
-- All linters must pass: clippy, ruff, biome, rubocop, phpstan, golangci-lint
+- All linters must pass: clippy, ruff, oxlint, rubocop, phpstan, golangci-lint
 - Pre-commit hooks via `prek` — enforced locally and in CI (`prek run --all-files`)
 - License compliance: `cargo deny check` for Rust, equivalent per language
 - Security scanning: `cargo audit`, `pip-audit`, `npm audit`, `govulncheck`

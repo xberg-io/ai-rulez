@@ -11,6 +11,7 @@ When working on CI/CD, build infrastructure, or automation:
 
 - `Taskfile.yml` (or `Taskfile.yaml`) is the single entry point for all dev workflows
 - Standard tasks: `setup`, `build`, `test`, `lint`, `format`, `clean`, `dev`
+- `task build` is core-only; `task build:bindings` builds bindings and `task build:all` builds core plus bindings
 - Namespace by concern: `rust:build`, `python:test`, `node:lint`, `go:build:ffi`
 - Use `deps:` for task dependencies, `status:` for idempotent skip conditions
 - Use `vars:` and `env:` for configuration — never hardcode paths or credentials
@@ -18,6 +19,8 @@ When working on CI/CD, build infrastructure, or automation:
 - `BUILD_PROFILE` var supports `dev`, `release`, `ci` variants
 - Polyrepo root Taskfile orchestrates subrepo tasks via `(cd "$dir" && task ...)`
 - Keep tasks composable: small focused tasks combined by higher-level orchestrators
+- Alef tasks stay explicit: `task alef:generate` runs `alef all --clean --format=false`, `task alef:format` formats Alef output, and `task format` excludes Alef formatting
+- Generated e2e suites expose `task e2e:generate`, `task e2e:build`, `task e2e:test`, and `task e2e:all`; do not add legacy aliases
 - `task --list` must always produce a clear, organized summary
 
 ## GitHub Actions

@@ -33,7 +33,7 @@ task pre-commit:install
 ## Running Tests
 
 ```bash
-# All languages
+# Core tests
 task test
 
 # Specific languages
@@ -55,14 +55,30 @@ task cov:all
 ## Development Workflow
 
 ```bash
-# Build everything
+# Build core only
 task build
 
-# Format code
+# Build bindings or everything explicitly
+task build:bindings
+task build:all
+
+# Regenerate Alef-managed files without formatting
+task alef:generate
+
+# Run Alef formatting explicitly when needed
+task alef:format
+
+# Format repo code; excludes Alef formatting
 task format
 
 # Lint everything
 task lint
+
+# Generated e2e suites
+task e2e:generate
+task e2e:build
+task e2e:test
+task e2e:all
 
 # Run benchmarks
 task bench

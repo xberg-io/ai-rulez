@@ -7,6 +7,8 @@ priority: high
 - Treat Alef-managed binding files as generated output. Change Rust source, README templates, fixtures, or `alef.toml` instead of hand-editing generated packages.
 - Use `task alef:generate` for fast regeneration. It must run `alef all --clean --format=false`.
 - Do not compile bindings or run verification from `task alef:generate`.
-- Use `task alef:build` or `task build:bindings` when binding compilation is needed.
-- Use `task format` or `prek run --all-files` for formatting. Alef post-generation formatters are opt-in via `alef ... --format`.
+- Use `task alef:format` when Alef post-generation formatting is needed.
+- Use `task alef:build` or `task build:bindings` when binding compilation is needed; use `task build:all` for core plus bindings.
+- Use `task format` or `prek run --all-files` for repository formatting. `task format` excludes Alef post-generation formatting.
+- Generated e2e suites use canonical tasks: `task e2e:generate`, `task e2e:build`, `task e2e:test`, and `task e2e:all`. Do not add legacy aliases.
 - Commit generator inputs and regenerated output together.

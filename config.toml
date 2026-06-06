@@ -6,10 +6,10 @@ gitignore = true
 presets = ["claude", "codex", "copilot", "cursor", "antigravity"]
 
 builtins = [
+  "!git-workflow",
+  "!testing",
   "code-quality",
-  "git-workflow",
   "security",
-  "testing",
   "token-efficiency",
   "default-commands",
 ]

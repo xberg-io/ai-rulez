@@ -9,7 +9,7 @@ generate local AGENTS.md from these sources.
 
 - **Agents** (7): code-reviewer, polyglot-architect, rust-core-engineer, ffi-engineer, docs-writer,
   security-auditor, performance-engineer
-- **Rules** (4): Rust conventions, bindings, FFI interop, Alef workflow
+- **Rules** (12): Rust conventions, bindings, FFI interop, Alef workflow, commit procedure, git hygiene, test guidance
 - **Contexts** (5): prek, polyrepo-structure, pre-commit-tooling, taskfile-structure, kreuzberg-brand-and-docs
 - **Skills** (2): common-task-commands, quick-start
 

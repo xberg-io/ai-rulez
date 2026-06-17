@@ -14,6 +14,11 @@ builtins = [
   "default-commands",
 ]
 
+[[marketplaces]]
+name = "basemind"
+source = "Goldziher/basemind"
+type = "github"
+
 [[mcp_servers]]
 name = "github"
 description = "GitHub integration for repository operations and automation"
@@ -31,4 +36,10 @@ description = "AI-Rulez MCP server for configuration management"
 command = "ai-rulez"
 args = ["mcp"]
 transport = "stdio"
+enabled = true
+
+[[plugins]]
+marketplace = "basemind"
+name = "basemind"
+scope = "project"
 enabled = true

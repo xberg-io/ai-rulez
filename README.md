@@ -1,6 +1,6 @@
 # AI-Rulez
 
-Shared AI governance modules for kreuzberg.dev polyglot projects. Include modules by `path`; consumer repos
+Shared AI governance modules for xberg.io polyglot projects. Include modules by `path`; consumer repos
 generate local AGENTS.md from these sources.
 
 ## Available Modules

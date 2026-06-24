@@ -1,6 +1,6 @@
 version = "4.0"
 name = "ai-rulez"
-description = "Shared AI governance modules for kreuzberg.dev polyglot projects"
+description = "Shared AI governance modules for xberg.io polyglot projects"
 gitignore = true
 
 presets = ["claude", "codex", "copilot", "cursor", "antigravity"]

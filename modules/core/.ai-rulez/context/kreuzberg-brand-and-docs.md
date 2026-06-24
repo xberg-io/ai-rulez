@@ -5,8 +5,8 @@ priority: high
 # Kreuzberg Brand and Docs
 
 **Company**: Kreuzberg, Inc.
-**Landing**: kreuzberg.dev
-**Open-source docs domain pattern**: `docs.<repo>.kreuzberg.dev` (core extraction lib uses bare `docs.kreuzberg.dev`)
+**Landing**: xberg.io
+**Open-source docs domain pattern**: `docs.<repo>.xberg.io` (core extraction lib uses bare `docs.xberg.io`)
 **Commercial docs domain**: docs.kreuzberg.cloud
 
 Authoritative product list (use this exact ordering and wording in every README ecosystem block):
@@ -27,7 +27,7 @@ Authoritative product list (use this exact ordering and wording in every README 
 
 The `%D7%90` URL-encodes the Hebrew letter א (Aleph) — the canonical alef brand mark. Place in the badge row at the top of each polyglot repo's root README, and inside the alef-generated badge partial so every per-package README inherits it.
 
-Ecosystem-block links MUST use the GitHub repo URLs (`github.com/xberg-io/<repo>`), not the `docs.<repo>.kreuzberg.dev` subdomains — GitHub links push traffic to the source repos, encouraging stars.
+Ecosystem-block links MUST use the GitHub repo URLs (`github.com/xberg-io/<repo>`), not the `docs.<repo>.xberg.io` subdomains — GitHub links push traffic to the source repos, encouraging stars.
 
 Docs sites use the Zensical SSG (Material theme) with shared canonical assets:
 - `docs/css/extra.css` (identical across repos; per-repo accent overrides at end of file allowed)

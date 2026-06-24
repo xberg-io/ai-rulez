@@ -5,7 +5,7 @@ priority: medium
 
 # Add Language Generator
 
-E2E test generation is handled by [Alef](https://github.com/kreuzberg-dev/alef). To add a new language:
+E2E test generation is handled by [Alef](https://github.com/xberg-io/alef). To add a new language:
 
 ## Steps
 

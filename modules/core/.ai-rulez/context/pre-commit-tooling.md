@@ -7,12 +7,12 @@ priority: medium
 Shared hooks run via `prek run --all-files`. Each repo's `.pre-commit-config.yaml` defines its hooks.
 
 Most language-scoped hooks below are sourced from the shared
-[`kreuzberg-dev/pre-commit-hooks`](https://github.com/kreuzberg-dev/pre-commit-hooks)
+[`xberg-io/pre-commit-hooks`](https://github.com/xberg-io/pre-commit-hooks)
 repo (39 hooks; sha256-verified upstream binaries where applicable, toolchain wrappers elsewhere).
 Wire it into `.pre-commit-config.yaml` as:
 
 ```yaml
-- repo: https://github.com/kreuzberg-dev/pre-commit-hooks
+- repo: https://github.com/xberg-io/pre-commit-hooks
   rev: v0.1.0
   hooks:
     - id: shfmt

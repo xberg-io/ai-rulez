@@ -38,15 +38,15 @@ generate local AGENTS.md from these sources.
 ```yaml
 includes:
   - name: kreuzberg-core
-    source: https://github.com/kreuzberg-dev/ai-rulez.git
+    source: https://github.com/xberg-io/ai-rulez.git
     path: modules/core
     merge_strategy: local-override
   - name: kreuzberg-languages
-    source: https://github.com/kreuzberg-dev/ai-rulez.git
+    source: https://github.com/xberg-io/ai-rulez.git
     path: modules/languages
     merge_strategy: local-override
   - name: kreuzberg-cicd
-    source: https://github.com/kreuzberg-dev/ai-rulez.git
+    source: https://github.com/xberg-io/ai-rulez.git
     path: modules/cicd
     merge_strategy: local-override
 ```

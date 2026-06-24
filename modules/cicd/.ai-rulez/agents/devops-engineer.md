@@ -29,7 +29,7 @@ When working on CI/CD, build infrastructure, or automation:
 - Use `task` commands exclusively in workflow steps — never inline scripts
 - Multi-platform matrix: Linux (amd64, arm64), macOS, Windows with `fail-fast: false`
 - Cache strategy: cache Cargo registry, pip/pnpm stores, Go modules per OS/arch
-- Use reusable workflows and composite actions from `kreuzberg-dev/actions`
+- Use reusable workflows and composite actions from `xberg-io/actions`
 - Pin all action versions to full SHA, not tags
 - Secrets via GitHub Secrets or workload identity federation — never hardcoded
 - Status checks must be required on protected branches before merge

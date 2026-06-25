@@ -2,7 +2,7 @@
 priority: high
 ---
 
-# Kreuzberg Brand and Docs
+# Xberg Brand and Docs
 
 **Company**: Kreuzberg, Inc.
 **Landing**: xberg.io
@@ -11,7 +11,7 @@ priority: high
 
 Authoritative product list (use this exact ordering and wording in every README ecosystem block):
 
-- [Kreuzberg](https://github.com/xberg-io/kreuzberg) — document intelligence: text, tables, metadata from 91+ formats with optional OCR.
+- [Xberg](https://github.com/xberg-io/xberg) — document intelligence: text, tables, metadata from 91+ formats with optional OCR.
 - [Xberg Enterprise](https://github.com/xberg-io/xberg-enterprise) — managed extraction API with SDKs, dashboards, and observability.
 - [crawlberg](https://github.com/xberg-io/crawlberg) — web crawling and scraping with HTML→Markdown and headless-Chrome fallback.
 - [html-to-markdown](https://github.com/xberg-io/html-to-markdown) — fast, lossless HTML→Markdown engine.
@@ -19,7 +19,7 @@ Authoritative product list (use this exact ordering and wording in every README 
 - [tree-sitter-language-pack](https://github.com/xberg-io/tree-sitter-language-pack) — tree-sitter grammars and code-intelligence primitives.
 - [alef](https://github.com/xberg-io/alef) — the polyglot binding generator that produces every per-language binding across the 5 polyglot repos.
 
-**Alef badge (polyglot repos only — kreuzberg, h2m, tslp, lllm, crawlberg)**:
+**Alef badge (polyglot repos only — xberg, h2m, tslp, lllm, crawlberg)**:
 
 ```markdown
 [![Built with alef](https://img.shields.io/badge/built%20with-alef%20%D7%90-007ec6)](https://github.com/xberg-io/alef)
@@ -34,7 +34,7 @@ Docs sites use the Zensical SSG (Material theme) with shared canonical assets:
 - `docs/overrides/main.html` (identical across repos; only GA ID, og-image URL, edit-link prefix substituted per-repo)
 - `zensical.toml` theme/plugins/markdown_extensions blocks (identical across repos)
 - Nav: `Home → Get Started → Guides → Concepts → Reference → More`
-- `docs/index.md`: hero → "Why X" 6-card grid → Language Support table → Quick Example tabs → "Part of Kreuzberg.dev" ecosystem grid → "Explore the Docs" cards → Getting Help
+- `docs/index.md`: hero → "Why X" 6-card grid → Language Support table → Quick Example tabs → "Part of Xberg.dev" ecosystem grid → "Explore the Docs" cards → Getting Help
 - `docs/llms.txt`: canonical sitemap shape with an Ecosystem section listing all sibling docs subdomains
 
 Every repo's root Taskfile exposes the same docs commands via `.task/tools/docs.yml`:
@@ -43,7 +43,7 @@ Every repo's root Taskfile exposes the same docs commands via `.task/tools/docs.
 - `task docs:serve` — local dev server with live reload
 - `task docs:lint:links` — lychee link check
 - `task docs:lint:prose` — textlint prose lint
-- `task docs:snippets:validate` (kreuzberg only) — verify all `docs/snippets/` compile via snippet-runner
+- `task docs:snippets:validate` (xberg only) — verify all `docs/snippets/` compile via snippet-runner
 
 Prose style: terse, second-person imperative. No marketing adjectives. No emoji headers. Lead with structural facts ("Eight extraction functions are available…") rather than "This section will walk you through…". Use admonitions only for genuine `tip`/`warning`/`info` callouts.
 
@@ -53,9 +53,9 @@ Prose style: terse, second-person imperative. No marketing adjectives. No emoji 
 
 Both IDs live in every repo's `docs/overrides/main.html` gtag block. Do not introduce per-repo GA properties without an explicit business reason.
 
-**Canonical icons set**: 18 SVGs in `docs/assets/icons/` (source-of-truth: kreuzberg core). When syncing assets to a sibling repo, copy the whole `icons/` directory wholesale — siblings should not maintain their own subset.
+**Canonical icons set**: 18 SVGs in `docs/assets/icons/` (source-of-truth: xberg core). When syncing assets to a sibling repo, copy the whole `icons/` directory wholesale — siblings should not maintain their own subset.
 
 **README-template policy**: where a repo's root `README.md` is generator-driven, edit the template only — never hand-edit the generated `README.md`. The generated file is checked in but is downstream output.
 
-- kreuzberg, xberg-enterprise: hand-written root READMEs (direct edits OK)
+- xberg, xberg-enterprise: hand-written root READMEs (direct edits OK)
 - html-to-markdown, tree-sitter-language-pack, liter-llm, crawlberg: alef-generated from `readme_templates/` — edit the template, run `alef readme`

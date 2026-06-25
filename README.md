@@ -37,15 +37,15 @@ generate local AGENTS.md from these sources.
 
 ```yaml
 includes:
-  - name: kreuzberg-core
+  - name: xberg-core
     source: https://github.com/xberg-io/ai-rulez.git
     path: modules/core
     merge_strategy: local-override
-  - name: kreuzberg-languages
+  - name: xberg-languages
     source: https://github.com/xberg-io/ai-rulez.git
     path: modules/languages
     merge_strategy: local-override
-  - name: kreuzberg-cicd
+  - name: xberg-cicd
     source: https://github.com/xberg-io/ai-rulez.git
     path: modules/cicd
     merge_strategy: local-override
@@ -57,7 +57,7 @@ Run `ai-rulez generate` from each consumer repo after updating include pins or l
 
 | Repo | Modules |
 |------|---------|
-| kreuzberg | core, languages, cicd, infrastructure, e2e-generator |
+| xberg | core, languages, cicd, infrastructure, e2e-generator |
 | html-to-markdown | core, languages, cicd, infrastructure, e2e-generator |
 | liter-llm | core, languages, cicd, e2e-generator |
 | crawlberg | core, languages, cicd, e2e-generator |

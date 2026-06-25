@@ -13,13 +13,13 @@ Authoritative product list (use this exact ordering and wording in every README 
 
 - [Kreuzberg](https://github.com/xberg-io/kreuzberg) — document intelligence: text, tables, metadata from 91+ formats with optional OCR.
 - [Xberg Enterprise](https://github.com/xberg-io/xberg-enterprise) — managed extraction API with SDKs, dashboards, and observability.
-- [kreuzcrawl](https://github.com/xberg-io/kreuzcrawl) — web crawling and scraping with HTML→Markdown and headless-Chrome fallback.
+- [crawlberg](https://github.com/xberg-io/crawlberg) — web crawling and scraping with HTML→Markdown and headless-Chrome fallback.
 - [html-to-markdown](https://github.com/xberg-io/html-to-markdown) — fast, lossless HTML→Markdown engine.
 - [liter-llm](https://github.com/xberg-io/liter-llm) — universal LLM API client with native bindings for 14 languages and 143 providers.
 - [tree-sitter-language-pack](https://github.com/xberg-io/tree-sitter-language-pack) — tree-sitter grammars and code-intelligence primitives.
 - [alef](https://github.com/xberg-io/alef) — the polyglot binding generator that produces every per-language binding across the 5 polyglot repos.
 
-**Alef badge (polyglot repos only — kreuzberg, h2m, tslp, lllm, kreuzcrawl)**:
+**Alef badge (polyglot repos only — kreuzberg, h2m, tslp, lllm, crawlberg)**:
 
 ```markdown
 [![Built with alef](https://img.shields.io/badge/built%20with-alef%20%D7%90-007ec6)](https://github.com/xberg-io/alef)
@@ -58,4 +58,4 @@ Both IDs live in every repo's `docs/overrides/main.html` gtag block. Do not intr
 **README-template policy**: where a repo's root `README.md` is generator-driven, edit the template only — never hand-edit the generated `README.md`. The generated file is checked in but is downstream output.
 
 - kreuzberg, xberg-enterprise: hand-written root READMEs (direct edits OK)
-- html-to-markdown, tree-sitter-language-pack, liter-llm, kreuzcrawl: alef-generated from `readme_templates/` — edit the template, run `alef readme`
+- html-to-markdown, tree-sitter-language-pack, liter-llm, crawlberg: alef-generated from `readme_templates/` — edit the template, run `alef readme`

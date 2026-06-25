@@ -62,7 +62,7 @@ Run `ai-rulez generate` from each consumer repo after updating include pins or l
 | liter-llm | core, languages, cicd, e2e-generator |
 | kreuzcrawl | core, languages, cicd, e2e-generator |
 | tree-sitter-language-pack | core, languages, cicd, e2e-generator |
-| kreuzberg-cloud | cicd, infrastructure |
+| xberg-enterprise | cicd, infrastructure |
 | infra | cicd, infrastructure |
 | actions | cicd |
 

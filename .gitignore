@@ -4,3 +4,14 @@ AGENTS.md
 .claude/
 .codex/
 .mcp.json
+
+# BEGIN ai-rulez (DO NOT EDIT - managed by ai-rulez)
+.agents/
+.ai-rulez/.generated-manifest.json
+.cursor/
+.github/agents/
+.github/commands/
+.github/copilot-instructions.md
+.github/skills/
+GEMINI.md
+# END ai-rulez

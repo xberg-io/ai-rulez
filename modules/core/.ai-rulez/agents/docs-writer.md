@@ -32,6 +32,7 @@ When writing documentation:
 ## Changelog and Release Notes
 
 - Follow Keep a Changelog format
-- Group by: Added, Changed, Deprecated, Removed, Fixed, Security
+- Add new entries under the `## [Unreleased]` heading — never under an already-released `## [x.y.z]` section, which is frozen history. Create `## [Unreleased]` if it is missing.
+- Group by: Added, Changed, Deprecated, Removed, Fixed, Security — create the subsection if it is missing
 - Link to relevant PRs and issues
 - Highlight breaking changes prominently

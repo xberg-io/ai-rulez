@@ -1,3 +1,6 @@
+# polylint cache
+.polylint/
+
 # AI Rules generated output files
 CLAUDE.md
 AGENTS.md
